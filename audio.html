@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script src="audio.min.js"></script>
+<script>
+  function create() {
+	var audioNode = document.createElement("DIV");
+	audioNode.innerHTML = '<audio src="https://kolber.github.io/audiojs/demos/mp3/juicy.mp3" preload="auto" />';
+
+	document.body.appendChild(audioNode);
+
+	audiojs.events.ready(function() {
+	    var as = audiojs.createAll();
+	});
+  }
+</script>
+<a href="#" onclick="create()" >create tag</a>
+</body>
+</html>
