@@ -13,7 +13,9 @@
 	audioNode.innerHTML = '<audio id="captcha" src="http://10.32.247.40:8080/captcha/captchaCall/CJMALL_M/MTQ1OTc2Nzg0NTAwOTcxMTk3ODQ4MzFjYXB0Y2hhXzEwc2VjX3Blcl8xMDBMaW1pdF8yMTAuMTIyLjEwNC44MTE=/1/audio.wav" src="audio.wav"  />';
 
 	document.body.appendChild(audioNode);
-	document.getElementById("captcha").play();
+	setTimeout(function() {
+		document.getElementById("captcha").play();
+	},4000)
 	/*
 	audiojs.events.ready(function() {
 	    var as = audiojs.createAll();
