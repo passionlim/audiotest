@@ -10,10 +10,10 @@
 <script>
   function create() {
 	var audioNode = document.createElement("DIV");
-	audioNode.innerHTML = '<audio src="https://dev-captcha.cjmall.com/captcha/captchaCall/CJMALL_M/MTQ1OTc0NjIxODgwNTE1NDc0MzcyMDJjYXB0Y2hhXzEwc2VjX3Blcl8xMDBMaW1pdF8yMTAuMTIyLjEwNC44MTE=/1/audio.wav" preload="auto" autoplay="autoplay" />';
+	audioNode.innerHTML = '<audio id="captcha" src="https://dev-captcha.cjmall.com/captcha/captchaCall/CJMALL_M/MTQ1OTc0NjIxODgwNTE1NDc0MzcyMDJjYXB0Y2hhXzEwc2VjX3Blcl8xMDBMaW1pdF8yMTAuMTIyLjEwNC44MTE=/1/audio.wav" preload="auto" />';
 
 	document.body.appendChild(audioNode);
-
+	$("captcha").play();
 	/*
 	audiojs.events.ready(function() {
 	    var as = audiojs.createAll();
