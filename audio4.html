@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script src="audio.min.js"></script>
+<script>
+  function create() {
+	var audioNode = document.createElement("DIV");
+	audioNode.innerHTML = '<audio id="captcha" src="//captcha.cjmall.com/captcha/captchaCall/audio?siteName=CJMALL_M&sessionKey=MTQ1OTc2MDA2NjAzOTI3NDEzMzYzNjJjYXB0Y2hhXzEwc2VjX3Blcl8xMDBMaW1pdF8yMTAuMTIyLjEwNC4xMTky&level=1" src="audio.wav"  />';
+
+	document.body.appendChild(audioNode);
+	document.getElementById("captcha").play();
+	/*
+	audiojs.events.ready(function() {
+	    var as = audiojs.createAll();
+	});*/
+  }
+</script>
+<a href="#" onclick="create()" >create tag</a>
+<a href="http://10.32.247.40:8080/captcha/captchaCall/CJMALL_M/MTQ1OTc0NjIxODgwNTE1NDc0MzcyMDJjYXB0Y2hhXzEwc2VjX3Blcl8xMDBMaW1pdF8yMTAuMTIyLjEwNC44MTE=/1/audio.wav">link</a>
+</body>
+</html>
