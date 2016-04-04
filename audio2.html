@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script src="audio.min.js"></script>
+<script>
+  function create() {
+	var audioNode = document.createElement("DIV");
+	audioNode.innerHTML = '<audio id="captcha" src="audio.wav" preload="auto" />';
+
+	document.body.appendChild(audioNode);
+	document.getElementById("captcha").play();
+	/*
+	audiojs.events.ready(function() {
+	    var as = audiojs.createAll();
+	});*/
+  }
+</script>
+<a href="#" onclick="create()" >create tag</a>
+</body>
+</html>
